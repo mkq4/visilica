@@ -1,0 +1,215 @@
+:root{
+    --main-color-purple: #9C9CAB;
+    --main-color-grey: #B0B0AE;
+    --main-color-blue: #A3ADC6;
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    font-family: 'Caveat', cursive;
+}
+.menu {
+    position: relative;
+    max-width: 570px;
+    max-height: 800px;
+    z-index: 2;
+}
+.menu__inner {
+    padding: 50px 78px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 640px;
+    border: 5px solid #000;
+    background-color: var(--main-color-blue);
+    border-radius: 5px;
+    
+}
+
+.menu__theme {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 30px;
+}
+.menu__theme-user {
+    margin-left: 5px;
+}
+.menu__theme-btn {
+    z-index: 4;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+}
+.menu__play-btn {
+    margin-top: 30px;
+    height: 120px;
+    font-size: 50px;
+    color: rgb(132, 71, 71);
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+}
+.menu__block {
+    margin-top: 50px;
+    height: 340px;
+    /* border: 1px solid #000; */
+}
+
+.theme__block {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    z-index: 4;
+    width: 400px;
+    background-color: var(--main-color-grey);
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+}
+.theme-item {
+    padding: 10px 0;
+    border: 2px solid #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-item:hover{
+    background-color: #81817d;
+}
+
+.theme-item + .theme-item{
+    border-top: 0px;
+}
+
+.animals {
+}
+.countries {
+}
+.capitals {
+}
+.food {
+}
+.flowers {
+}
+
+.settings svg{
+
+}
+.settings {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    /* padding-bottom: 20px; */
+    padding: 10px 10px 30px 10px;
+}
+.settings-block {
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 5;
+    background-color: var(--main-color-grey);
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    display: none;
+}
+.settings-item {
+}
+.voise {
+}
+.hints-sum {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    
+}
+.hints-time {
+    padding: 5px;
+}
+.hints-time li:hover {
+    background-color: var(--main-color-purple);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.active {
+    background-color: var(--main-color-purple);
+    border: 2px solid #484848;
+    border-radius: 5px;
+}
+
+.hint-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+}
+.active {
+}
+.active-settings {
+    display: block;
+}
+.settings-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.custom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+.custom-input{
+    /* margin: 15px 20px 0; */
+    resize: none;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.input-btn{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: var(--main-color-blue);
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Caveat', cursive;
+}
+.input-btn:hover{
+    background-color: #768eef;
+}
+.custom-inputs{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
