@@ -115,7 +115,7 @@ function setTheme () { // сохраняет в local storage значение
 
 playBtn.addEventListener('click', ()=>{
 
-    if(userTheme.innerHTML != ' '){window.location.href='index.html';}
+    if(userTheme.innerHTML != ' '){window.location.href='menu.html';}
     else{
         alert('Тема не выбрана')
     }
